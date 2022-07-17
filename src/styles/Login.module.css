@@ -1,0 +1,60 @@
+.container {
+  display: flex;
+}
+.frame {
+  height: 100vh;
+  width: 70%;
+}
+
+.image {
+  width: 100%;
+  height: 700px;
+  display: flex;
+}
+
+.form {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.form__image {
+  margin-top: 50px;
+  margin-bottom: 30px;
+  height: 70px;
+}
+
+.form__button__label {
+  color: #000000;
+}
+
+.form__button {
+  width: 100%;
+  height: 50px;
+}
+
+.form__button__div {
+  margin-left: 10px;
+  width: 90%;
+}
+
+@media (max-width: 600px) {
+  .image {
+    display: none;
+  }
+
+  .frame {
+    width: 0%;
+  }
+
+  .form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 30px;
+    margin-left: 15px;
+  }
+}
