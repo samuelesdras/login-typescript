@@ -5,7 +5,6 @@ import { UserContext } from '../context/UserContext';
 const Profile = () => {
   const userContext = useContext(UserContext);
 
-  console.log('profile', userContext);
   return (
     <>
       {!userContext?.user?.firstName && <CircularProgress />}
